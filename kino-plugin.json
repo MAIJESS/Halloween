@@ -1,0 +1,343 @@
+{
+ "id": "theme-halloween",
+ "name": "Halloween Kino",
+ "version": "1.0.0",
+ "apiVersion": 18,
+ "entry": "plugin.js",
+ "description": "Tema de Halloween para Kino TV: telarañas, araña, calabaza y 2 paletas (Noche y Bruja)",
+ "author": "Halloween Kino",
+ "hosts": [],
+ "capabilities": [
+  "screen"
+ ],
+ "categories": [
+  "themes"
+ ],
+ "color": "#FF7A00",
+ "icon": "icon.png",
+ "screen": {
+  "label": "Halloween",
+  "labelEn": "Halloween",
+  "opensFrom": [
+   "settings"
+  ],
+  "settingsButton": {
+   "label": "Ver presentación",
+   "labelEn": "See presentation"
+  }
+ },
+ "appThemes": [
+  {
+   "id": "halloween-noche",
+   "name": {
+    "es": "Halloween · Noche",
+    "en": "Halloween · Night"
+   },
+   "colors": {
+    "accent": "#FF7A00",
+    "onAccent": "#1A0A00",
+    "background": "#0B0710",
+    "surface": "#17101F",
+    "surfaceHigh": "#241A33",
+    "railPanel": "#120B1A",
+    "textPrimary": "#F4EDE4",
+    "textSecondary": "#B9A9C9",
+    "focus": "#FF7A00",
+    "onFocus": "#1A0A00",
+    "outline": "#3B2A4D",
+    "border": "#7A3BB8",
+    "placeholderTop": "#241A33",
+    "placeholderBottom": "#120B1A",
+    "success": "#6BD46B",
+    "warning": "#FFB020",
+    "error": "#FF5A5A",
+    "favorite": "#FF9E3D",
+    "scrim": "#000000"
+   },
+   "background": {
+    "type": "gradient",
+    "colors": [
+     "#0B0710",
+     "#1B0B2E",
+     "#07040B"
+    ],
+    "angle": 180
+   },
+   "shape": {
+    "cardRadius": 14,
+    "channelRadius": 14,
+    "buttonRadius": 22,
+    "chipRadius": 18,
+    "dialogRadius": 18,
+    "inputRadius": 12,
+    "dialogBorder": 2,
+    "menuBorder": 1,
+    "headerBorder": 1,
+    "cardBorder": 1,
+    "panelBorder": 1
+   },
+   "typography": {
+    "scale": 1.05,
+    "titleScale": 1.08,
+    "bodyScale": 1.0
+   },
+   "elevation": {
+    "cardShadow": 0.7,
+    "dialogShadow": 0.9,
+    "heroScrim": 0.75
+   },
+   "motion": {
+    "focusZoom": 1.08,
+    "crossfadeMs": 350,
+    "heroDrift": "on"
+   },
+   "player": {
+    "buttonScale": 1.1,
+    "playButtonScale": 1.25,
+    "seekBarScale": 1.2,
+    "labelScale": 1.0,
+    "buttonShape": "circle"
+   },
+   "tv": {
+    "typography": {
+     "scale": 1.0
+    }
+   },
+   "adjustable": {
+    "colors.accent": {
+     "swatches": [
+      "#FF7A00",
+      "#B26BFF",
+      "#6BD46B",
+      "#FF4D4D"
+     ]
+    },
+    "shape.cardRadius": {
+     "min": 0,
+     "max": 24
+    },
+    "typography.scale": {
+     "min": 0.95,
+     "max": 1.25
+    },
+    "background": true
+   },
+   "pluginColors": "respect",
+   "experience": "full",
+   "logo": {
+    "wordmark": {
+     "size": [
+      224,
+      64
+     ],
+     "paths": [
+      {
+       "d": "M44 54 L52 54 L52 14 L44 14 ZM60 38 L77 14 L67 14 L52 36 ZM67 54 L78 54 L62 38 L56 31 ZM84 54 L92 54 L92 18 L84 18 ZM102 54 L110 54 L110 14 L102 14 ZM126 54 L134 54 L134 14 L126 14 ZM118 54 L128 54 L118 14 L108 14 Z",
+       "fill": "textPrimary"
+      },
+      {
+       "d": "M172 35 L195 35 L195 33 L172 33 ZM171 35 L188 51 L189 50 L173 33 ZM171 34 L171 57 L173 57 L173 34 ZM171 33 L155 50 L156 51 L173 35 ZM172 33 L149 33 L149 35 L172 35 ZM173 33 L156 17 L155 18 L171 35 ZM173 34 L173 11 L171 11 L171 34 ZM173 35 L189 18 L188 17 L171 33 ZM194 34 L190 41 L191 42 L196 34 ZM189 41 L187 50 L189 50 L191 42 ZM188 49 L179 51 L180 53 L188 51 ZM179 52 L172 56 L172 58 L180 53 ZM172 56 L165 52 L164 53 L172 58 ZM165 51 L156 49 L156 51 L164 53 ZM157 50 L155 41 L153 42 L155 50 ZM154 41 L150 34 L148 34 L153 42 ZM150 34 L154 27 L153 26 L148 34 ZM155 27 L157 18 L155 18 L153 26 ZM156 19 L165 17 L164 15 L156 17 ZM165 16 L172 12 L172 10 L164 15 ZM172 12 L179 16 L180 15 L172 10 ZM179 17 L188 19 L188 17 L180 15 ZM187 18 L189 27 L191 26 L189 18 ZM190 27 L194 34 L196 34 L191 26 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M180 34 L179 37 L180 37 L182 34 ZM178 37 L178 40 L179 41 L180 37 ZM178 40 L175 40 L175 42 L179 41 ZM175 41 L172 42 L172 44 L175 42 ZM172 42 L169 41 L169 42 L172 44 ZM169 40 L166 40 L165 41 L169 42 ZM166 40 L166 37 L164 37 L165 41 ZM165 37 L164 34 L162 34 L164 37 ZM164 34 L165 31 L164 31 L162 34 ZM166 31 L166 28 L165 27 L164 31 ZM166 28 L169 28 L169 26 L165 27 ZM169 27 L172 26 L172 24 L169 26 ZM172 26 L175 27 L175 26 L172 24 ZM175 28 L178 28 L179 27 L175 26 ZM178 28 L178 31 L180 31 L179 27 ZM179 31 L180 34 L182 34 L180 31 ZM187 34 L184 39 L185 40 L189 34 ZM184 39 L183 45 L184 45 L185 39 ZM183 45 L177 46 L177 47 L183 46 ZM177 46 L172 49 L172 51 L178 47 ZM172 49 L167 46 L166 47 L172 51 ZM167 46 L161 45 L161 46 L167 47 ZM161 45 L160 39 L159 39 L160 45 ZM160 39 L157 34 L155 34 L159 40 ZM157 34 L160 29 L159 28 L155 34 ZM160 29 L161 23 L160 23 L159 29 ZM161 23 L167 22 L167 21 L161 22 ZM167 22 L172 19 L172 17 L166 21 ZM172 19 L177 22 L178 21 L172 17 ZM177 22 L183 23 L183 22 L177 21 ZM183 23 L184 29 L185 29 L184 23 ZM184 29 L187 34 L189 34 L185 28 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M92 8 L91 6 L89 5 L87 5 L85 6 L84 8 L84 10 L84 12 L85 14 L87 15 L89 15 L91 14 L92 12 L92 10 ZM90 3 L89 2 L87 2 L86 3 L85 4 L86 6 L87 7 L89 7 L90 6 L91 4 ZM86 7 L81 1 L81 2 L85 7 ZM81 1 L78 0 L77 2 L81 3 ZM86 9 L81 5 L81 6 L85 10 ZM81 4 L77 5 L78 7 L81 6 ZM86 10 L81 7 L81 8 L85 11 ZM80 7 L77 12 L78 12 L82 8 ZM86 12 L81 9 L81 11 L85 13 ZM80 10 L77 18 L78 18 L82 10 ZM91 7 L95 2 L95 1 L90 7 ZM95 3 L99 2 L98 0 L95 1 ZM91 10 L95 6 L95 5 L90 9 ZM95 6 L98 7 L99 5 L95 4 ZM91 11 L95 8 L95 7 L90 10 ZM94 8 L98 12 L99 12 L96 7 ZM91 13 L95 11 L95 9 L90 12 ZM94 10 L98 18 L99 18 L96 10 ZM87 0 L87 3 L89 3 L89 0 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M0 1 L40 1 L40 -1 L0 -1 ZM0 1 L37 16 L37 15 L0 -1 ZM0 0 L28 29 L29 28 L0 0 ZM-1 0 L15 37 L16 37 L1 0 ZM-1 0 L-1 40 L1 40 L1 0 ZM13 -1 L10 2 L11 3 L13 1 ZM10 2 L11 5 L13 5 L11 2 ZM12 4 L9 5 L9 7 L12 6 ZM8 6 L9 9 L10 9 L10 6 ZM9 9 L6 8 L6 10 L9 10 ZM5 9 L4 12 L6 12 L7 9 ZM5 11 L2 10 L2 11 L5 13 ZM2 10 L-1 13 L1 13 L3 11 ZM23 -1 L18 3 L19 4 L23 1 ZM18 4 L21 9 L22 8 L19 3 ZM21 8 L15 10 L16 11 L21 9 ZM15 11 L16 16 L17 16 L16 10 ZM16 16 L11 15 L10 16 L16 17 ZM10 15 L8 21 L9 21 L11 16 ZM9 21 L4 18 L3 19 L8 22 ZM3 18 L-1 23 L1 23 L4 19 ZM33 -1 L26 5 L27 6 L33 1 ZM26 6 L30 13 L31 12 L27 5 ZM30 12 L22 14 L23 16 L31 13 ZM22 15 L23 23 L24 23 L23 15 ZM23 23 L15 22 L15 23 L23 24 ZM14 22 L12 30 L13 31 L16 23 ZM13 30 L6 26 L5 27 L12 31 ZM5 26 L-1 33 L1 33 L6 27 Z",
+       "fill": "textSecondary"
+      },
+      {
+       "d": "M198 44 L202 44 L202 54 L206 54 L206 44 L210 44 L210 40 L198 40 ZM216 54 L219 54 L224 40 L220 40 L218 49 L214 40 L211 40 Z",
+       "fill": "textSecondary"
+      },
+      {
+       "d": "M207 8 L202 7 L204 12 L199 14 L205 14 L207 18 L210 15 L213 18 L215 14 L221 14 L216 12 L218 7 L213 8 L210 13 Z",
+       "fill": "#B26BFF"
+      }
+     ]
+    },
+    "mark": {
+     "size": [
+      48,
+      48
+     ],
+     "paths": [
+      {
+       "d": "M43 26 L41 23 L38 20 L34 18 L29 16 L24 16 L19 16 L14 18 L10 20 L7 23 L5 26 L4 30 L5 34 L7 37 L10 40 L14 42 L19 44 L24 44 L29 44 L34 42 L38 40 L41 37 L43 34 L44 30 ZM24 25 L22 21 L19 18 L16 16 L12 16 L9 18 L6 21 L4 25 L4 30 L4 35 L6 39 L9 42 L12 44 L16 44 L19 42 L22 39 L24 35 L24 30 ZM44 25 L42 21 L39 18 L36 16 L32 16 L29 18 L26 21 L24 25 L24 30 L24 35 L26 39 L29 42 L32 44 L36 44 L39 42 L42 39 L44 35 L44 30 ZM32 25 L31 20 L28 17 L25 15 L23 15 L20 17 L17 20 L16 25 L16 30 L16 35 L17 40 L20 43 L23 45 L25 45 L28 43 L31 40 L32 35 L32 30 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M26 15 L27 10 L30 6 L25 5 L21 9 L22 15 Z",
+       "fill": "#5BBF4A"
+      },
+      {
+       "d": "M11 29 L20 29 L16 22 ZM28 29 L37 29 L32 22 ZM24 31 L22 35 L26 35 ZM14 42 L18 40 L21 43 L24 41 L27 43 L30 40 L34 42 L37 36 L33 34 L30 38 L27 35 L24 39 L21 35 L18 38 L15 34 L11 36 Z",
+       "fill": "onAccent"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "halloween-bruja",
+   "name": {
+    "es": "Halloween · Bruja",
+    "en": "Halloween · Witch"
+   },
+   "colors": {
+    "accent": "#7CFF4F",
+    "onAccent": "#07140A",
+    "background": "#080D0A",
+    "surface": "#101A14",
+    "surfaceHigh": "#18271D",
+    "railPanel": "#0B130E",
+    "textPrimary": "#EAF5E6",
+    "textSecondary": "#A8BFAE",
+    "focus": "#7CFF4F",
+    "onFocus": "#07140A",
+    "outline": "#2A4030",
+    "border": "#8E3DD6",
+    "placeholderTop": "#18271D",
+    "placeholderBottom": "#0B130E",
+    "success": "#7CFF4F",
+    "warning": "#FFB020",
+    "error": "#FF5A5A",
+    "favorite": "#C77DFF",
+    "scrim": "#000000"
+   },
+   "background": {
+    "type": "gradient",
+    "colors": [
+     "#080D0A",
+     "#140A24",
+     "#050806"
+    ],
+    "angle": 180
+   },
+   "shape": {
+    "cardRadius": 14,
+    "channelRadius": 14,
+    "buttonRadius": 22,
+    "chipRadius": 18,
+    "dialogRadius": 18,
+    "inputRadius": 12,
+    "dialogBorder": 2,
+    "menuBorder": 1,
+    "headerBorder": 1,
+    "cardBorder": 1,
+    "panelBorder": 1
+   },
+   "typography": {
+    "scale": 1.05,
+    "titleScale": 1.08,
+    "bodyScale": 1.0
+   },
+   "elevation": {
+    "cardShadow": 0.7,
+    "dialogShadow": 0.9,
+    "heroScrim": 0.75
+   },
+   "motion": {
+    "focusZoom": 1.08,
+    "crossfadeMs": 350,
+    "heroDrift": "on"
+   },
+   "player": {
+    "buttonScale": 1.1,
+    "playButtonScale": 1.25,
+    "seekBarScale": 1.2,
+    "labelScale": 1.0,
+    "buttonShape": "circle"
+   },
+   "tv": {
+    "typography": {
+     "scale": 1.0
+    }
+   },
+   "adjustable": {
+    "colors.accent": {
+     "swatches": [
+      "#7CFF4F",
+      "#C77DFF",
+      "#FF7A00",
+      "#4FD8FF"
+     ]
+    },
+    "shape.cardRadius": {
+     "min": 0,
+     "max": 24
+    },
+    "typography.scale": {
+     "min": 0.95,
+     "max": 1.25
+    },
+    "background": true
+   },
+   "pluginColors": "respect",
+   "experience": "full",
+   "logo": {
+    "wordmark": {
+     "size": [
+      224,
+      64
+     ],
+     "paths": [
+      {
+       "d": "M44 54 L52 54 L52 14 L44 14 ZM60 38 L77 14 L67 14 L52 36 ZM67 54 L78 54 L62 38 L56 31 ZM84 54 L92 54 L92 18 L84 18 ZM102 54 L110 54 L110 14 L102 14 ZM126 54 L134 54 L134 14 L126 14 ZM118 54 L128 54 L118 14 L108 14 Z",
+       "fill": "textPrimary"
+      },
+      {
+       "d": "M172 35 L195 35 L195 33 L172 33 ZM171 35 L188 51 L189 50 L173 33 ZM171 34 L171 57 L173 57 L173 34 ZM171 33 L155 50 L156 51 L173 35 ZM172 33 L149 33 L149 35 L172 35 ZM173 33 L156 17 L155 18 L171 35 ZM173 34 L173 11 L171 11 L171 34 ZM173 35 L189 18 L188 17 L171 33 ZM194 34 L190 41 L191 42 L196 34 ZM189 41 L187 50 L189 50 L191 42 ZM188 49 L179 51 L180 53 L188 51 ZM179 52 L172 56 L172 58 L180 53 ZM172 56 L165 52 L164 53 L172 58 ZM165 51 L156 49 L156 51 L164 53 ZM157 50 L155 41 L153 42 L155 50 ZM154 41 L150 34 L148 34 L153 42 ZM150 34 L154 27 L153 26 L148 34 ZM155 27 L157 18 L155 18 L153 26 ZM156 19 L165 17 L164 15 L156 17 ZM165 16 L172 12 L172 10 L164 15 ZM172 12 L179 16 L180 15 L172 10 ZM179 17 L188 19 L188 17 L180 15 ZM187 18 L189 27 L191 26 L189 18 ZM190 27 L194 34 L196 34 L191 26 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M180 34 L179 37 L180 37 L182 34 ZM178 37 L178 40 L179 41 L180 37 ZM178 40 L175 40 L175 42 L179 41 ZM175 41 L172 42 L172 44 L175 42 ZM172 42 L169 41 L169 42 L172 44 ZM169 40 L166 40 L165 41 L169 42 ZM166 40 L166 37 L164 37 L165 41 ZM165 37 L164 34 L162 34 L164 37 ZM164 34 L165 31 L164 31 L162 34 ZM166 31 L166 28 L165 27 L164 31 ZM166 28 L169 28 L169 26 L165 27 ZM169 27 L172 26 L172 24 L169 26 ZM172 26 L175 27 L175 26 L172 24 ZM175 28 L178 28 L179 27 L175 26 ZM178 28 L178 31 L180 31 L179 27 ZM179 31 L180 34 L182 34 L180 31 ZM187 34 L184 39 L185 40 L189 34 ZM184 39 L183 45 L184 45 L185 39 ZM183 45 L177 46 L177 47 L183 46 ZM177 46 L172 49 L172 51 L178 47 ZM172 49 L167 46 L166 47 L172 51 ZM167 46 L161 45 L161 46 L167 47 ZM161 45 L160 39 L159 39 L160 45 ZM160 39 L157 34 L155 34 L159 40 ZM157 34 L160 29 L159 28 L155 34 ZM160 29 L161 23 L160 23 L159 29 ZM161 23 L167 22 L167 21 L161 22 ZM167 22 L172 19 L172 17 L166 21 ZM172 19 L177 22 L178 21 L172 17 ZM177 22 L183 23 L183 22 L177 21 ZM183 23 L184 29 L185 29 L184 23 ZM184 29 L187 34 L189 34 L185 28 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M92 8 L91 6 L89 5 L87 5 L85 6 L84 8 L84 10 L84 12 L85 14 L87 15 L89 15 L91 14 L92 12 L92 10 ZM90 3 L89 2 L87 2 L86 3 L85 4 L86 6 L87 7 L89 7 L90 6 L91 4 ZM86 7 L81 1 L81 2 L85 7 ZM81 1 L78 0 L77 2 L81 3 ZM86 9 L81 5 L81 6 L85 10 ZM81 4 L77 5 L78 7 L81 6 ZM86 10 L81 7 L81 8 L85 11 ZM80 7 L77 12 L78 12 L82 8 ZM86 12 L81 9 L81 11 L85 13 ZM80 10 L77 18 L78 18 L82 10 ZM91 7 L95 2 L95 1 L90 7 ZM95 3 L99 2 L98 0 L95 1 ZM91 10 L95 6 L95 5 L90 9 ZM95 6 L98 7 L99 5 L95 4 ZM91 11 L95 8 L95 7 L90 10 ZM94 8 L98 12 L99 12 L96 7 ZM91 13 L95 11 L95 9 L90 12 ZM94 10 L98 18 L99 18 L96 10 ZM87 0 L87 3 L89 3 L89 0 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M0 1 L40 1 L40 -1 L0 -1 ZM0 1 L37 16 L37 15 L0 -1 ZM0 0 L28 29 L29 28 L0 0 ZM-1 0 L15 37 L16 37 L1 0 ZM-1 0 L-1 40 L1 40 L1 0 ZM13 -1 L10 2 L11 3 L13 1 ZM10 2 L11 5 L13 5 L11 2 ZM12 4 L9 5 L9 7 L12 6 ZM8 6 L9 9 L10 9 L10 6 ZM9 9 L6 8 L6 10 L9 10 ZM5 9 L4 12 L6 12 L7 9 ZM5 11 L2 10 L2 11 L5 13 ZM2 10 L-1 13 L1 13 L3 11 ZM23 -1 L18 3 L19 4 L23 1 ZM18 4 L21 9 L22 8 L19 3 ZM21 8 L15 10 L16 11 L21 9 ZM15 11 L16 16 L17 16 L16 10 ZM16 16 L11 15 L10 16 L16 17 ZM10 15 L8 21 L9 21 L11 16 ZM9 21 L4 18 L3 19 L8 22 ZM3 18 L-1 23 L1 23 L4 19 ZM33 -1 L26 5 L27 6 L33 1 ZM26 6 L30 13 L31 12 L27 5 ZM30 12 L22 14 L23 16 L31 13 ZM22 15 L23 23 L24 23 L23 15 ZM23 23 L15 22 L15 23 L23 24 ZM14 22 L12 30 L13 31 L16 23 ZM13 30 L6 26 L5 27 L12 31 ZM5 26 L-1 33 L1 33 L6 27 Z",
+       "fill": "textSecondary"
+      },
+      {
+       "d": "M198 44 L202 44 L202 54 L206 54 L206 44 L210 44 L210 40 L198 40 ZM216 54 L219 54 L224 40 L220 40 L218 49 L214 40 L211 40 Z",
+       "fill": "textSecondary"
+      },
+      {
+       "d": "M207 8 L202 7 L204 12 L199 14 L205 14 L207 18 L210 15 L213 18 L215 14 L221 14 L216 12 L218 7 L213 8 L210 13 Z",
+       "fill": "#B26BFF"
+      }
+     ]
+    },
+    "mark": {
+     "size": [
+      48,
+      48
+     ],
+     "paths": [
+      {
+       "d": "M43 26 L41 23 L38 20 L34 18 L29 16 L24 16 L19 16 L14 18 L10 20 L7 23 L5 26 L4 30 L5 34 L7 37 L10 40 L14 42 L19 44 L24 44 L29 44 L34 42 L38 40 L41 37 L43 34 L44 30 ZM24 25 L22 21 L19 18 L16 16 L12 16 L9 18 L6 21 L4 25 L4 30 L4 35 L6 39 L9 42 L12 44 L16 44 L19 42 L22 39 L24 35 L24 30 ZM44 25 L42 21 L39 18 L36 16 L32 16 L29 18 L26 21 L24 25 L24 30 L24 35 L26 39 L29 42 L32 44 L36 44 L39 42 L42 39 L44 35 L44 30 ZM32 25 L31 20 L28 17 L25 15 L23 15 L20 17 L17 20 L16 25 L16 30 L16 35 L17 40 L20 43 L23 45 L25 45 L28 43 L31 40 L32 35 L32 30 Z",
+       "fill": "accent"
+      },
+      {
+       "d": "M26 15 L27 10 L30 6 L25 5 L21 9 L22 15 Z",
+       "fill": "#5BBF4A"
+      },
+      {
+       "d": "M11 29 L20 29 L16 22 ZM28 29 L37 29 L32 22 ZM24 31 L22 35 L26 35 ZM14 42 L18 40 L21 43 L24 41 L27 43 L30 40 L34 42 L37 36 L33 34 L30 38 L27 35 L24 39 L21 35 L18 38 L15 34 L11 36 Z",
+       "fill": "onAccent"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}
